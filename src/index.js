@@ -11,9 +11,9 @@ app.use(express.json());
 
 
 app.use('/pessoas', pessoaRoutes);
-app.use('/formacoes', formacaoRoutes);
-app.use('/experiencias', experienciaRoutes);
-app.use('/habilidades', habilidadeRoutes);
+app.use('/formacao', formacaoRoutes);
+app.use('/experiencia', experienciaRoutes);
+app.use('/habilidade', habilidadeRoutes);
 
 const PORT = process.env.PORT || 3333;
 app.listen(PORT, () => console.log(`Servidor rodando na porta ${PORT}`));
